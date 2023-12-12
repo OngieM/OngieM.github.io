@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="E:\Quiz_App\Static\Style.css">
+  <title>Quiz Game</title>
+ </head>
+ <body>
+  <div class="container-general">
+   <div class="general">
+    <p id="heading-general">General</p>
+    <a href="qstns-gen.html" data-category="General"><button id="general-button" onclick="setCategory('General'); loadQuestions();">Start</button></a>
+   </div>
+  </div>
+  <div class="container-logic">
+   <div class="logic">
+    <p id="heading-logic">Logic</p>
+    <a href="qstns-logic.html" data-category="Logic"><button id="logic-button" onclick="setCategory('Logic'); loadQuestions();">Start</button></a>
+   </div>
+  </div>
+  <div class="container-math">
+   <div class="math">
+    <p id="heading-math">Math</p>
+    <a href="qstns-math.html" data-category="Math"><button id="math-button" onclick="setCategory('Math'); loadQuestions();">Start</button></a>
+   </div>
+  </div>
+  <script src="E:\Quiz_App\Static\Script.js">
+  </script>
+ </body>
+</html>
