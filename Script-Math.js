@@ -71,7 +71,7 @@ function checkAnswer(selectedOption) {
 function displayScorePage() {
     console.log('Total Score:', totalScore);
     // Pass the totalScore as a query parameter to the score page URL
-    window.location.href = `file:///E:/Quiz_App/Templates/Score.html?score=${totalScore}`;
+    window.location.href = `Score.html?score=${totalScore}`;
 }
 
 
@@ -104,7 +104,7 @@ function loadQuestion() {
         option4.innerText = currentQuestion.options[3];
     } else {
         // User has answered the 10th question, redirect to the score page
-        window.location.href = 'file:///E:/Quiz_App/Templates/Score.html';
+        window.location.href = 'file:///Score.html';
     }
 }
 
