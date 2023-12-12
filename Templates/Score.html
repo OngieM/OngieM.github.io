@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E:\Quiz_App\Static\Style.css">
+    <title>Quiz Game - Score</title>
+</head>
+<body>
+    <div class="score-wrapper">
+        <div class="score-header">
+            <p>Good Job!</p>
+        </div>
+        <div class="score-image">
+            <img id="Check-image" src="E:\Quiz_App\Templates\Check.png" alt="Image">
+        </div>
+        <div class="score-total">
+            <p id="totalScore"></p>
+        </div>
+        <a href="E:\Quiz_App\Templates\Quiz.html"><button id="Play-Again">Play Again</button></a>
+    </div>
+
+    <script>
+        // Retrieve the total score from the query parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const totalScore = urlParams.get('score');
+
+        // Update the total score on the page
+        document.getElementById('totalScore').innerText = `You've earned ${totalScore || 0} points`;
+    </script>
+</body>
+</html>
