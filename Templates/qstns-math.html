@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E:\Quiz_App\Static\Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <title>Quiz Game</title>
+    </script>
+  </head>
+  <body>
+    <div class="quiz-wrapper">
+      <div class="question-container">
+        <div class="quiz-header">
+          <a href="E:\Quiz_App\Templates\Categories.html"><button class="back-button"><i class="fas fa-arrow-left"></i></button></a>
+          <div class="question-number">Questions</div>
+          <button class="refresh-button" id="refresh-button" onclick="refreshQuestion()"><i class="fas fa-sync"></i></button>
+        </div>
+      </div>
+      <div class="question" id="questionDiv">
+        <!-- Your question goes here -->
+      </div>
+      <div class="options">
+        <!-- Your answer options go here -->
+        <button type="button" class="option1" id="option-1" onclick="checkAnswer('option-1')"></button>
+        <button type="button" class="option2" id="option-2" onclick="checkAnswer('option-2')"></button>
+        <button type="button" class="option3" id="option-3" onclick="checkAnswer('option-3')"></button>
+        <button type="button" class="option4" id="option-4" onclick="checkAnswer('option-4')"></button>
+      </div>
+    </div>
+    <script src="E:\Quiz_App\Static\Script-Math.js" defer></script>
+  </body>
+</html>
